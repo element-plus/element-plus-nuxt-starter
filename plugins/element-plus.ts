@@ -1,8 +1,7 @@
 
 import { defineNuxtPlugin } from '#app'
-import ElementPlus from 'element-plus'
+import ElementPlus from 'element-plus/lib'
 
 export default defineNuxtPlugin((nuxtApp) => {
-  // nuxtApp.provide('hello', (msg) => `Hello ${msg}!`);
-  nuxtApp.use(ElementPlus)
+  nuxtApp.app.use(ElementPlus)
 })

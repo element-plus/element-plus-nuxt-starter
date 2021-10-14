@@ -4,9 +4,4 @@ export default defineNuxtConfig({
   css: [
     'assets/scss/index.scss'
   ],
-  plugins: [
-    {
-      src: '~/plugins/element-plus', mode: 'client'
-    }
-  ]
 })

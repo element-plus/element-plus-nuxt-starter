@@ -14,13 +14,16 @@
       <a target="_blank" href="https://v3.nuxtjs.org/">NuxtJS</a>
     </h2>
     <p>
-      <el-button></el-button>
+      <el-button @click="hello">Hello</el-button>
     </p>
   </div>
 </template>
 
 <script setup lang="ts">
-import NuxtLogo from "../components/NuxtLogo.vue";
+import { ElMessage } from 'element-plus';
+import NuxtLogo from '../components/NuxtLogo.vue';
+
+const hello = () => ElMessage.info('hello world');
 </script>
 
 <style>
