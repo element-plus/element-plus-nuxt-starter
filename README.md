@@ -1,6 +1,9 @@
 # Element Plus with Nuxt 3 Minimal Starter
 
-> 🏗 WIP
+> 🏗 WIP (Work in Progress)
+> Nuxt3 is still beta, we may need to keep updating to adapt it.
+
+Preview: <https://nuxt-starter.element-plus.org>
 
 We recommend to look at the [Nuxt3 Docs](https://v3.nuxtjs.org) and [Element Plus Docs](https://element-plus.org/).
 
@@ -14,7 +17,7 @@ yarn install
 
 ## Development
 
-Start the development server on http://localhost:3000
+Start the development server on `http://localhost:3000`
 
 ```bash
 yarn dev
