@@ -20,7 +20,7 @@
 </template>
 
 <script setup lang="ts">
-import { ElMessage } from 'element-plus';
+import { ElMessage } from 'element-plus/lib';
 import NuxtLogo from '../components/NuxtLogo.vue';
 
 const hello = () => ElMessage.info('hello world');
