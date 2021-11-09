@@ -4,6 +4,6 @@ pnpm-lock.yaml
 
 node_modules
 *.log
-.nuxt
-nuxt.d.ts
+dist
 .output
+.nuxt

@@ -1,6 +1,10 @@
 import { defineNuxtPlugin } from '#app'
-import * as ElementPlus from 'element-plus/lib'
+// if you do not want to import all, comment this
+import ElementPlus from 'element-plus/lib'
 
-export default defineNuxtPlugin((nuxtApp: { vueApp: { use: (arg0: typeof ElementPlus) => void } }) => {
+// we are explore import components on demand, but @nuxt/components seem not support components/ComponentA/index.js
+// https://github.com/nuxt/components#library-authors
+
+export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.use(ElementPlus)
 })

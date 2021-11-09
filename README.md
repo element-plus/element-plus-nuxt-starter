@@ -36,3 +36,14 @@ Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).
 ## FAQ
 
 The current ssr is a bit of a problem and is still being resolved.
+
+### Could not resolve './hooks/use-prevent-globalThis/index.js'
+
+It is a bug when use vite with nuxt. (vite replace `global` with `globalThis`).
+Please be patient and wait for the fix.
+
+> https://github.com/nuxt/framework/issues/1713
+
+## Ref
+
+- [vitesse-nuxt3](https://github.com/antfu/vitesse-nuxt3)
