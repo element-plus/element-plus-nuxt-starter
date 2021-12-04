@@ -4,6 +4,10 @@ export default defineNuxtConfig({
   meta: {
     title: 'ElementPlus + Nuxt3',
   },
+  buildModules: [
+    '@vueuse/core/nuxt',
+    '@pinia/nuxt',
+  ],
   css: [
     'assets/scss/index.scss'
   ],
@@ -12,5 +16,8 @@ export default defineNuxtConfig({
     // {
     //   path: 'node_modules/element-plus/lib/components/*/index.js',
     // }
-  ]
+  ],
+  vite: {
+    logLevel: 'info',
+  },
 })

@@ -3,7 +3,7 @@
     <el-button @click="hello">Hello</el-button>
   </p>
 
-  <!-- <el-dropdown>
+  <el-dropdown>
     <el-button type="primary">
       Dropdown List
       <i class="el-icon-arrow-down el-icon--right"></i>
@@ -17,7 +17,7 @@
         <el-dropdown-item>Action 5</el-dropdown-item>
       </el-dropdown-menu>
     </template>
-  </el-dropdown>-->
+  </el-dropdown>
 
   <p>
     <Counter />
@@ -25,9 +25,9 @@
 </template>
 
 <script setup lang="ts">
-// import {
-//   ElMessage,
-// } from "element-plus/lib";
+import {
+  ElMessage,
+} from "element-plus/lib";
 
-// const hello = () => ElMessage.info("hello world");
+const hello = () => ElMessage.info("hello world");
 </script>
