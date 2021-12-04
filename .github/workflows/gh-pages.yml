@@ -21,10 +21,12 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          NITRO_PRESET: browser
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ".output/public"
           force_orphan: true

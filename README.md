@@ -23,6 +23,10 @@ Start the development server on `http://localhost:3000`
 yarn dev
 ```
 
+More info about [nuxt deployment](https://v3.nuxtjs.org/docs/deployment/presets).
+
+You need set env `NITRO_PRESET=browser` to generate static html in `.output/public`.
+
 ## Production
 
 Build the application for production:

@@ -1,9 +1,10 @@
 {
   "private": true,
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "start": "node .output/server/index.mjs"
+    "build": "nuxi build",
+    "dev": "nuxi dev",
+    "start": "node .output/server/index.mjs",
+    "generate": "export NITRO_PRESET=browser && npm run build"
   },
   "devDependencies": {
     "@pinia/nuxt": "^0.1.6",
