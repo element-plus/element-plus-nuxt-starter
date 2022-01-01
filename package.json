@@ -7,10 +7,11 @@
     "generate": "export NITRO_PRESET=browser && npm run build"
   },
   "devDependencies": {
-    "@pinia/nuxt": "^0.1.6",
-    "element-plus": "1.2.0-beta.5",
-    "nuxt3": "^3.0.0-27307420.6a25d3e",
-    "sass": "^1.44.0",
+    "@pinia/nuxt": "^0.1.8",
+    "@vueuse/nuxt": "^7.5.1",
+    "element-plus": "1.3.0-beta.1",
+    "nuxt3": "^3.0.0-27338323.1e98259",
+    "sass": "^1.45.2",
     "typescript": "^4.5.2"
   },
   "pnpm": {
@@ -20,6 +21,6 @@
     }
   },
   "dependencies": {
-    "pinia": "^2.0.5"
+    "pinia": "^2.0.9"
   }
 }

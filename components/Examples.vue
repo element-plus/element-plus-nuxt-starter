@@ -1,6 +1,7 @@
 <template>
   <p>
     <el-button @click="hello">Hello</el-button>
+    <el-button type="primary" @click="hello">Hello</el-button>
   </p>
 
   <el-dropdown>

@@ -1,7 +1,11 @@
 # Element Plus with Nuxt 3 Minimal Starter
 
-> 🏗 WIP (Work in Progress)
+<pre align="center">
+🏗 Working in Progress
+</pre>
+
 > Nuxt3 is still beta, we may need to keep updating to adapt it.
+> It doesn't work very well yet.
 
 Preview: <https://nuxt-starter.element-plus.org>
 

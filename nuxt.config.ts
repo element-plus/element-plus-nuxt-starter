@@ -1,23 +1,18 @@
-import { defineNuxtConfig } from 'nuxt3'
+import { defineNuxtConfig } from "nuxt3";
 
 export default defineNuxtConfig({
   meta: {
-    title: 'ElementPlus + Nuxt3',
+    title: "ElementPlus + Nuxt3",
   },
-  buildModules: [
-    '@vueuse/core/nuxt',
-    '@pinia/nuxt',
-  ],
-  css: [
-    'assets/scss/index.scss'
-  ],
+  buildModules: ["@pinia/nuxt"],
+  css: ["assets/scss/index.scss"],
   components: [
-    '~/components/',
+    "~/components/",
     // {
     //   path: 'node_modules/element-plus/lib/components/*/index.js',
     // }
   ],
   vite: {
-    logLevel: 'info',
+    logLevel: "info",
   },
-})
+});
