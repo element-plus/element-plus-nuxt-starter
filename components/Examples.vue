@@ -1,5 +1,17 @@
 <template>
   <p>
+    <el-icon>
+      <Grape />
+    </el-icon>
+    <el-icon>
+      <IceCream />
+    </el-icon>
+    <el-icon>
+      <IceDrink />
+    </el-icon>
+  </p>
+
+  <p>
     <el-button @click="hello">Hello</el-button>
     <el-button type="primary" @click="hello">Hello</el-button>
   </p>
@@ -26,9 +38,8 @@
 </template>
 
 <script setup lang="ts">
-import {
-  ElMessage,
-} from "element-plus/lib";
+import { ElMessage } from "element-plus/lib";
+import { Grape, IceCream, IceDrink } from "@element-plus/icons-vue";
 
 const hello = () => ElMessage.info("hello world");
 </script>
