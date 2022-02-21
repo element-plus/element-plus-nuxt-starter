@@ -7,16 +7,16 @@
     "generate": "export NITRO_PRESET=browser && npm run build"
   },
   "dependencies": {
-    "pinia": "^2.0.9"
+    "pinia": "^2.0.11"
   },
   "devDependencies": {
-    "@element-plus/icons-vue": "^0.2.4",
+    "@element-plus/icons-vue": "^0.2.7",
     "@pinia/nuxt": "^0.1.8",
-    "@vueuse/nuxt": "^7.5.3",
-    "element-plus": "1.3.0-beta.1",
-    "nuxt3": "^3.0.0-27366343.1d741cb",
-    "sass": "^1.45.2",
-    "typescript": "^4.5.4"
+    "@vueuse/nuxt": "^7.6.2",
+    "element-plus": "^2.0.2",
+    "nuxt3": "^3.0.0-27420403.16e2a54",
+    "sass": "^1.49.8",
+    "typescript": "^4.5.5"
   },
   "pnpm": {
     "overrides": {
