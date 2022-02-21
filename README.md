@@ -4,12 +4,12 @@
 🏗 Working in Progress
 </pre>
 
-> Nuxt3 is still beta, we may need to keep updating to adapt it.
+> Nuxt 3 is still beta, we may need to keep updating to adapt it.
 > It doesn't work very well yet.
 
 Preview: <https://nuxt-starter.element-plus.org>
 
-We recommend to look at the [Nuxt3 Docs](https://v3.nuxtjs.org) and [Element Plus Docs](https://element-plus.org/).
+We recommend to look at the [Nuxt 3 Docs](https://v3.nuxtjs.org) and [Element Plus Docs](https://element-plus.org/).
 
 ## Setup
 
@@ -40,17 +40,6 @@ yarn build
 ```
 
 Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).
-
-## FAQ
-
-The current ssr is a bit of a problem and is still being resolved.
-
-### Could not resolve './hooks/use-prevent-globalThis/index.js'
-
-It is a bug when use vite with nuxt. (vite replace `global` with `globalThis`).
-Please be patient and wait for the fix.
-
-> https://github.com/nuxt/framework/issues/1713
 
 ## Ref
 
