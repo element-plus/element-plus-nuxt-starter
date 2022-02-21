@@ -1,5 +1,6 @@
-<script setup lang='ts'>
-const { count } = useCount()
+<script setup lang="ts">
+import { ElInputNumber } from "element-plus/dist/index.full.js";
+const { count } = useCount();
 </script>
 
 <template>

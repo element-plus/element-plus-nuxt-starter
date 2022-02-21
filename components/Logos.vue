@@ -1,6 +1,9 @@
 <template>
   <div class="display-logo">
-    <img class="logo" src="https://element-plus.org/images/element-plus-logo.svg" />
+    <img
+      class="logo"
+      src="https://element-plus.org/images/element-plus-logo.svg"
+    />
     <NuxtLogo class="logo" />
   </div>
   <h2>
@@ -18,7 +21,7 @@
 }
 
 .logo {
-  width: 15rem;
-  margin: 1rem;
+  width: 12rem;
+  margin-bottom: 1rem;
 }
 </style>

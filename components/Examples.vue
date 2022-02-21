@@ -1,25 +1,7 @@
 <template>
-  <p>
-    <el-icon>
-      <Grape />
-    </el-icon>
-    <el-icon>
-      <IceCream />
-    </el-icon>
-    <el-icon>
-      <IceDrink />
-    </el-icon>
-  </p>
-
-  <p>
-    <el-button @click="hello">Hello</el-button>
-    <el-button type="primary" @click="hello">Hello</el-button>
-  </p>
-
-  <el-dropdown>
-    <el-button type="primary">
-      Dropdown List
-      <i class="el-icon-arrow-down el-icon--right"></i>
+  <el-dropdown class="m-4" type="primary">
+    <el-button type="primary" plain>
+      Dropdown List<el-icon class="el-icon--right"><arrow-down /></el-icon>
     </el-button>
     <template #dropdown>
       <el-dropdown-menu>
@@ -32,14 +14,38 @@
     </template>
   </el-dropdown>
 
-  <p>
-    <Counter />
-  </p>
+  <br />
+
+  <el-button class="m-4" @click="hello">Hello</el-button>
+  <el-button class="m-4" type="primary" @click="hello" plain>Hello</el-button>
+
+  <br />
+
+  <Counter class="m-4" />
+
+  <br />
+
+  <el-icon class="cursor-pointer">
+    <Grape />
+  </el-icon>
+  <el-icon class="cursor-pointer">
+    <IceCream />
+  </el-icon>
+  <el-icon class="cursor-pointer">
+    <IceDrink />
+  </el-icon>
 </template>
 
 <script setup lang="ts">
-import { ElMessage } from "element-plus/lib";
-import { Grape, IceCream, IceDrink } from "@element-plus/icons-vue";
+import {
+  ElIcon,
+  ElButton,
+  ElDropdown,
+  ElDropdownMenu,
+  ElDropdownItem,
+  ElMessage,
+} from "element-plus/dist/index.full.js";
+import { Grape, IceCream, IceDrink, ArrowDown } from "@element-plus/icons-vue";
 
 const hello = () => ElMessage.info("hello world");
 </script>

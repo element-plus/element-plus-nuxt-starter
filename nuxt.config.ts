@@ -1,18 +1,69 @@
 import { defineNuxtConfig } from "nuxt3";
+import IconsResolver from "unplugin-icons/resolver";
+import Components from "unplugin-vue-components/vite";
 
+// https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
+  // meta
   meta: {
     title: "ElementPlus + Nuxt3",
+    meta: [
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        hid: "description",
+        name: "description",
+        content: "ElementPlus + Nuxt3",
+      },
+    ],
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
-  buildModules: ["@pinia/nuxt"],
-  css: ["assets/scss/index.scss"],
-  components: [
-    "~/components/",
-    // {
-    //   path: 'node_modules/element-plus/lib/components/*/index.js',
-    // }
+
+  // css
+  css: ["~/assets/scss/index.scss"],
+
+  // build
+  build: {
+    transpile: [],
+  },
+
+  // build modules
+  buildModules: [
+    "@pinia/nuxt",
+    "@nuxtjs/svg",
+    "@vueuse/nuxt",
+    "nuxt-windicss",
+    "unplugin-icons/nuxt",
   ],
+
+  // auto import components
+  components: true,
+
+  // vite plugins
   vite: {
-    logLevel: "info",
+    plugins: [
+      Components({
+        dts: true,
+        resolvers: [IconsResolver({})],
+      }),
+    ],
+  },
+
+  // vueuse
+  vueuse: {
+    ssrHandlers: true,
+  },
+
+  // windicss
+  windicss: {
+    analyze: {
+      analysis: {
+        interpretUtilities: false,
+      },
+      server: {
+        port: 4000,
+        open: false,
+      },
+    },
+    scan: true,
   },
 });
