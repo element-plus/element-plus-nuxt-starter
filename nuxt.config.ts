@@ -2,6 +2,8 @@ import { defineNuxtConfig } from "nuxt3";
 import IconsResolver from "unplugin-icons/resolver";
 import Components from "unplugin-vue-components/vite";
 
+const lifecycle = process.env.npm_lifecycle_event;
+
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
   // meta
@@ -23,7 +25,7 @@ export default defineNuxtConfig({
 
   // build
   build: {
-    transpile: [],
+    transpile: lifecycle === "build" ? ["element-plus"] : [],
   },
 
   // build modules

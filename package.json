@@ -11,6 +11,7 @@
   "scripts": {
     "dev": "nuxi dev",
     "build": "nuxi build",
+    "preview": "nuxi preview",
     "start": "node .output/server/index.mjs",
     "generate": "export NITRO_PRESET=browser && npm run build"
   },
