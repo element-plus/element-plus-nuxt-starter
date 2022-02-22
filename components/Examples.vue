@@ -31,9 +31,21 @@
   <el-icon class="cursor-pointer">
     <IceCream />
   </el-icon>
-  <el-icon class="cursor-pointer">
+  <el-icon class="cursor-pointer mb-4">
     <IceDrink />
   </el-icon>
+
+  <br />
+
+  <client-only>
+    <el-config-provider :locale="zhCn">
+      <el-date-picker
+        v-model="timeValue"
+        type="date"
+        placeholder="请选择日期"
+      ></el-date-picker>
+    </el-config-provider>
+  </client-only>
 </template>
 
 <script setup lang="ts">
@@ -43,9 +55,13 @@ import {
   ElDropdown,
   ElDropdownMenu,
   ElDropdownItem,
+  ElConfigProvider,
+  ElDatePicker,
   ElMessage,
 } from "element-plus/dist/index.full.js";
+import zhCn from "element-plus/dist/locale/zh-cn.js";
 import { Grape, IceCream, IceDrink, ArrowDown } from "@element-plus/icons-vue";
 
+const timeValue = ref("");
 const hello = () => ElMessage.info("hello world");
 </script>
