@@ -7,7 +7,7 @@
 > Nuxt 3 is still beta, we may need to keep updating to adapt it.
 > It doesn't work very well yet.
 
-Preview: <https://nuxt-starter.element-plus.org>
+Preview: <https://element-plus-nuxt-starter.vercel.app/>
 
 We recommend to look at the [Nuxt 3 Docs](https://v3.nuxtjs.org) and [Element Plus Docs](https://element-plus.org/).
 
