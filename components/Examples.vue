@@ -1,6 +1,6 @@
 <template>
   <el-dropdown class="m-4" type="primary">
-    <el-button type="primary" plain>
+    <el-button type="primary">
       Dropdown List<el-icon class="el-icon--right"><arrow-down /></el-icon>
     </el-button>
     <template #dropdown>
@@ -17,7 +17,7 @@
   <br />
 
   <el-button class="m-4" @click="hello">Hello</el-button>
-  <el-button class="m-4" type="primary" @click="hello" plain>Hello</el-button>
+  <el-button class="m-4" type="primary" @click="hello">Hello</el-button>
 
   <br />
 
