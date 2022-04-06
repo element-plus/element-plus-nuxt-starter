@@ -18,6 +18,7 @@
 
   <el-button class="m-4" @click="hello">Hello</el-button>
   <el-button class="m-4" type="primary" @click="hello">Hello</el-button>
+  <el-button class="m-4" type="success" @click="helloSuccess">Hello</el-button>
 
   <br />
 
@@ -64,4 +65,5 @@ import { Grape, IceCream, IceDrink, ArrowDown } from "@element-plus/icons-vue";
 
 const timeValue = ref("");
 const hello = () => ElMessage.info("hello world");
+const helloSuccess = () => ElMessage.success("hello world");
 </script>

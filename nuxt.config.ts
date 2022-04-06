@@ -1,6 +1,4 @@
 import { defineNuxtConfig } from "nuxt3";
-import IconsResolver from "unplugin-icons/resolver";
-import Components from "unplugin-vue-components/vite";
 
 const lifecycle = process.env.npm_lifecycle_event;
 
@@ -30,42 +28,29 @@ export default defineNuxtConfig({
 
   // build modules
   buildModules: [
+    '@vueuse/nuxt',
+    '@unocss/nuxt',
     "@pinia/nuxt",
     "@nuxtjs/svg",
-    "@vueuse/nuxt",
-    "nuxt-windicss",
-    "unplugin-icons/nuxt",
   ],
 
   // auto import components
   components: true,
-
-  // vite plugins
-  vite: {
-    plugins: [
-      Components({
-        dts: true,
-        resolvers: [IconsResolver({})],
-      }),
-    ],
-  },
 
   // vueuse
   vueuse: {
     ssrHandlers: true,
   },
 
-  // windicss
-  windicss: {
-    analyze: {
-      analysis: {
-        interpretUtilities: false,
-      },
-      server: {
-        port: 4000,
-        open: false,
-      },
+  unocss: {
+    uno: true,
+    attributify: true,
+    // preflight: true,
+    icons: {
+      scale: 1.2,
     },
-    scan: true,
+    shortcuts: [
+      ['btn', 'px-4 py-1 rounded inline-block bg-teal-600 text-white cursor-pointer hover:bg-teal-700 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50'],
+    ],
   },
 });
