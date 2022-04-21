@@ -6,7 +6,7 @@ const lifecycle = process.env.npm_lifecycle_event
 export default defineNuxtConfig({
   // meta
   meta: {
-    title: 'ElementPlus + Nuxt3',
+    title: 'Element Plus + Nuxt 3',
     meta: [
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
@@ -24,6 +24,16 @@ export default defineNuxtConfig({
   // build
   build: {
     transpile: lifecycle === 'build' ? ['element-plus'] : [],
+  },
+
+  typescript: {
+    strict: true,
+    shim: false,
+    tsConfig: {
+      compilerOptions: {
+        noImplicitAny: false,
+      },
+    },
   },
 
   // build modules

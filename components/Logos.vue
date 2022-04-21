@@ -1,9 +1,15 @@
+<script setup lang="ts">
+import { ElIcon } from 'element-plus/dist/index.full.mjs'
+import { Plus } from '@element-plus/icons-vue'
+</script>
+
 <template>
-  <div class="display-logo">
+  <div class="display-logo" flex="~" gap-2 items-center>
     <img
       class="logo"
       src="https://element-plus.org/images/element-plus-logo.svg"
     />
+    <el-icon><Plus /></el-icon>
     <NuxtLogo class="logo" />
   </div>
   <h2>
@@ -21,7 +27,6 @@
 }
 
 .logo {
-  width: 12rem;
-  margin-bottom: 1rem;
+  max-height: 3rem;
 }
 </style>
