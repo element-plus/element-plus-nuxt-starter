@@ -14,7 +14,7 @@
     "build": "nuxi build",
     "preview": "nuxi preview",
     "start": "node .output/server/index.mjs",
-    "generate": "cross-env NITRO_PRESET=browser npm run build"
+    "generate": "nuxt generate"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^1.1.4",
@@ -27,7 +27,6 @@
     "@pinia/nuxt": "^0.1.8",
     "@unocss/nuxt": "^0.31.12",
     "@vueuse/nuxt": "^8.3.0",
-    "cross-env": "^7.0.3",
     "nuxt": "npm:nuxt3@latest",
     "sass": "^1.50.1",
     "typescript": "^4.6.3"
