@@ -8,28 +8,28 @@
   },
   "author": "Element Plus Team",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "dev": "nuxi dev",
     "build": "nuxi build",
     "preview": "nuxi preview",
     "start": "node .output/server/index.mjs",
-    "generate": "export NITRO_PRESET=browser && npm run build"
+    "generate": "cross-env NITRO_PRESET=browser npm run build"
   },
   "dependencies": {
-    "postcss-loader": "^6.2.1"
+    "@element-plus/icons-vue": "^1.1.4",
+    "element-plus": "^2.1.10",
+    "pinia": "^2.0.13",
+    "vue": "^3.2.33"
   },
   "devDependencies": {
-    "@element-plus/icons-vue": "^1.1.4",
     "@nuxtjs/svg": "^0.4.0",
     "@pinia/nuxt": "^0.1.8",
-    "@unocss/nuxt": "^0.30.11",
-    "@vueuse/nuxt": "^8.2.5",
-    "element-plus": "^2.1.8",
-    "nuxt3": "^3.0.0-27487582.3ea39e0",
-    "pinia": "^2.0.13",
-    "sass": "^1.49.11",
-    "sass-loader": "^12.6.0",
-    "tailwind-config-viewer": "^1.6.3",
+    "@unocss/nuxt": "^0.31.12",
+    "@vueuse/nuxt": "^8.3.0",
+    "cross-env": "^7.0.3",
+    "nuxt": "npm:nuxt3@latest",
+    "sass": "^1.50.1",
     "typescript": "^4.6.3"
   }
 }
