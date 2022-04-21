@@ -1,6 +1,6 @@
-import { defineNuxtConfig } from "nuxt3";
+import { defineNuxtConfig } from 'nuxt'
 
-const lifecycle = process.env.npm_lifecycle_event;
+const lifecycle = process.env.npm_lifecycle_event
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
@@ -26,8 +26,8 @@ export default defineNuxtConfig({
     transpile: lifecycle === "build" ? ["element-plus"] : [],
   },
 
-  // build modules
-  buildModules: [
+  // modules
+  modules: [
     '@vueuse/nuxt',
     '@unocss/nuxt',
     "@pinia/nuxt",
@@ -53,4 +53,4 @@ export default defineNuxtConfig({
       ['btn', 'px-4 py-1 rounded inline-block bg-teal-600 text-white cursor-pointer hover:bg-teal-700 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50'],
     ],
   },
-});
+})

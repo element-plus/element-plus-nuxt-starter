@@ -1,6 +1,6 @@
 {
   "name": "element-plus-nuxt-starter",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Element Plus with Nuxt 3 Minimal Starter",
   "repository": {
     "type": "git",
@@ -9,11 +9,10 @@
   "author": "Element Plus Team",
   "license": "MIT",
   "scripts": {
-    "dev": "nuxi dev",
-    "build": "nuxi build",
-    "preview": "nuxi preview",
-    "start": "node .output/server/index.mjs",
-    "generate": "export NITRO_PRESET=browser && npm run build"
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "preview": "nuxt preview",
+    "generate": "nuxt generate"
   },
   "dependencies": {
     "postcss-loader": "^6.2.1"
@@ -25,7 +24,6 @@
     "@unocss/nuxt": "^0.30.11",
     "@vueuse/nuxt": "^8.2.5",
     "element-plus": "^2.1.8",
-    "nuxt3": "^3.0.0-27487582.3ea39e0",
     "pinia": "^2.0.13",
     "sass": "^1.49.11",
     "sass-loader": "^12.6.0",
