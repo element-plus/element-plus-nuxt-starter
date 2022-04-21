@@ -1,4 +1,16 @@
-@use "element-plus/dist/index.css";
+@use 'element-plus/dist/index.css';
+
+html,
+body,
+#app {
+  margin: 0;
+  padding: 0;
+}
+
+html.dark {
+  background: #222;
+  color: white;
+}
 
 a {
   font-weight: 400;
