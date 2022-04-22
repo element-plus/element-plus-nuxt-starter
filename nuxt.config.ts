@@ -30,11 +30,6 @@ export default defineNuxtConfig({
   typescript: {
     strict: true,
     shim: false,
-    tsConfig: {
-      compilerOptions: {
-        noImplicitAny: false,
-      },
-    },
   },
 
   // build modules
