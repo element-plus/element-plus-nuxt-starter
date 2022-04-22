@@ -59,8 +59,8 @@ import {
   ElConfigProvider,
   ElDatePicker,
   ElMessage,
-} from "element-plus/dist/index.full.js";
-import zhCn from "element-plus/dist/locale/zh-cn.js";
+} from "element-plus";
+import zhCn from "element-plus/es/locale/lang/zh-cn";
 import { Grape, IceCream, IceDrink, ArrowDown } from "@element-plus/icons-vue";
 
 const timeValue = ref("");

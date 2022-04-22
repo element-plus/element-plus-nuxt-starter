@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ElInputNumber } from "element-plus/dist/index.full.js";
+import { ElInputNumber } from "element-plus";
 const { count } = useCount();
 </script>
 

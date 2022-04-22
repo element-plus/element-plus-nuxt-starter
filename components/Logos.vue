@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ElIcon } from 'element-plus/dist/index.full.mjs'
+import { ElIcon } from 'element-plus'
 import { Plus } from '@element-plus/icons-vue'
 </script>
 
@@ -13,7 +13,7 @@ import { Plus } from '@element-plus/icons-vue'
     <NuxtLogo class="logo" />
   </div>
   <h2>
-    <a target="_blank" href="https://v3.nuxtjs.org/">Element Plus</a>
+    <a target="_blank" href="https://element-plus.org/">Element Plus</a>
     With
     <a target="_blank" href="https://v3.nuxtjs.org/">NuxtJS</a>
   </h2>
