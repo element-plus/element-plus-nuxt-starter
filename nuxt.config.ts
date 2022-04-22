@@ -23,7 +23,8 @@ export default defineNuxtConfig({
 
   // build
   build: {
-    transpile: lifecycle === 'build' ? ['element-plus'] : [],
+    transpile:
+      lifecycle === 'build' || lifecycle === 'generate' ? ['element-plus'] : [],
   },
 
   typescript: {
