@@ -23,10 +23,9 @@
     "vue": "^3.2.33"
   },
   "devDependencies": {
-    "@nuxtjs/svg": "^0.4.0",
     "@pinia/nuxt": "^0.1.8",
     "@unocss/nuxt": "^0.31.12",
-    "@vueuse/nuxt": "^8.3.0",
+    "@vueuse/nuxt": "^8.3.1",
     "nuxt": "npm:nuxt3@latest",
     "sass": "^1.50.1",
     "typescript": "^4.6.3"

@@ -38,7 +38,7 @@ export default defineNuxtConfig({
   },
 
   // build modules
-  modules: ['@vueuse/nuxt', '@unocss/nuxt', '@pinia/nuxt', '@nuxtjs/svg'],
+  modules: ['@vueuse/nuxt', '@unocss/nuxt', '@pinia/nuxt'],
 
   // auto import components
   components: true,
