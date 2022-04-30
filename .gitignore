@@ -6,3 +6,4 @@ node_modules
 dist
 .output
 .nuxt
+.vercel
