@@ -10,9 +10,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "nuxi dev",
-    "build": "nuxi build",
-    "preview": "nuxi preview",
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "preview": "nuxt preview",
     "start": "node .output/server/index.mjs",
     "generate": "nuxt generate"
   },
