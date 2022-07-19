@@ -22,7 +22,7 @@
     "pinia": "^2.0.16"
   },
   "devDependencies": {
-    "@pinia/nuxt": "^0.1.9",
+    "@pinia/nuxt": "^0.3.0",
     "@unocss/nuxt": "^0.33.2",
     "@vueuse/nuxt": "^8.4.2",
     "nuxt": "3.0.0-rc.6",

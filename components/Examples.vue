@@ -1,18 +1,27 @@
 <template>
-  <el-dropdown class="m-4" type="primary">
-    <el-button type="primary">
-      Dropdown List<el-icon class="el-icon--right"><arrow-down /></el-icon>
-    </el-button>
-    <template #dropdown>
-      <el-dropdown-menu>
-        <el-dropdown-item>Action 1</el-dropdown-item>
-        <el-dropdown-item>Action 2</el-dropdown-item>
-        <el-dropdown-item>Action 3</el-dropdown-item>
-        <el-dropdown-item>Action 4</el-dropdown-item>
-        <el-dropdown-item>Action 5</el-dropdown-item>
-      </el-dropdown-menu>
-    </template>
-  </el-dropdown>
+  Open Dark:
+  <el-switch v-model="dark" />
+
+  <div style="height:32px">
+    <client-only>
+      <el-dropdown class="m-4" type="primary">
+        <el-button type="primary">
+          Dropdown List<el-icon class="el-icon--right">
+            <arrow-down />
+          </el-icon>
+        </el-button>
+        <template #dropdown>
+          <el-dropdown-menu>
+            <el-dropdown-item>Action 1</el-dropdown-item>
+            <el-dropdown-item>Action 2</el-dropdown-item>
+            <el-dropdown-item>Action 3</el-dropdown-item>
+            <el-dropdown-item>Action 4</el-dropdown-item>
+            <el-dropdown-item>Action 5</el-dropdown-item>
+          </el-dropdown-menu>
+        </template>
+      </el-dropdown>
+    </client-only>
+  </div>
 
   <br />
 
@@ -39,31 +48,21 @@
   <br />
 
   <client-only>
-    <el-config-provider :locale="zhCn">
-      <el-date-picker
-        v-model="timeValue"
-        type="date"
-        placeholder="请选择日期"
-      ></el-date-picker>
+    <el-config-provider :locale="zhCn" namespace="fm">
+      <el-date-picker v-model="timeValue" type="date" placeholder="请选择日期"></el-date-picker>
     </el-config-provider>
   </client-only>
 </template>
 
 <script setup lang="ts">
+import { ArrowDown, Grape, IceCream, IceDrink } from "@element-plus/icons-vue";
 import {
-  ElIcon,
-  ElButton,
-  ElDropdown,
-  ElDropdownMenu,
-  ElDropdownItem,
-  ElConfigProvider,
-  ElDatePicker,
-  ElMessage,
+ElButton, ElConfigProvider, ElDatePicker, ElDropdown, ElDropdownItem, ElDropdownMenu, ElIcon, ElMessage, ElSwitch
 } from "element-plus";
 import zhCn from "element-plus/es/locale/lang/zh-cn";
-import { Grape, IceCream, IceDrink, ArrowDown } from "@element-plus/icons-vue";
 
 const timeValue = ref("");
 const hello = () => ElMessage.info("hello world");
 const helloSuccess = () => ElMessage.success("hello world");
+const dark = useDark();
 </script>

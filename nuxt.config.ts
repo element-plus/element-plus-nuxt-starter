@@ -3,7 +3,7 @@ import ElementPlus from 'unplugin-element-plus/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 import Components from 'unplugin-vue-components/vite'
 
-const lifecycle = process.env.npm_lifecycle_event
+// const lifecycle = process.env.npm_lifecycle_event
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
@@ -23,7 +23,7 @@ export default defineNuxtConfig({
 
   // css
   css: [
-    'assets/scss/style.scss',
+    'assets/scss/index.scss',
     'assets/scss/element/dark.scss',
   ],
 
@@ -46,7 +46,7 @@ export default defineNuxtConfig({
         useSource: true,
       }),
       Components({
-        dts:false,
+        dts: false,
         resolvers: [
           IconsResolver(),
         ],
@@ -58,9 +58,9 @@ export default defineNuxtConfig({
   build: {
     transpile: [
       // https://github.com/element-plus/element-plus-nuxt-starter/blob/44644788ee0d2a2580769769f9885b5cd9f7c0ab/nuxt.config.ts#L27
-      ...(lifecycle === 'build' || lifecycle === 'generate'
-        ? ['element-plus']
-        : []),
+    //   ...(lifecycle === 'build' || lifecycle === 'generate'
+    //     ? ['element-plus']
+    //     : []),
       // For importing 'element-plus/es/components/xxx/style/css' to work
       'element-plus/es',
     ],
