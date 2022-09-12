@@ -17,17 +17,25 @@
     "generate": "nuxi generate"
   },
   "dependencies": {
-    "@element-plus/icons-vue": "^2.0.6",
-    "element-plus": "^2.2.9",
-    "pinia": "^2.0.14",
-    "vue": "^3.2.37"
+    "@element-plus/icons-vue": "^2.0.9",
+    "element-plus": "^2.2.16",
+    "pinia": "^2.0.22",
+    "vue": "^3.2.39"
   },
   "devDependencies": {
-    "@pinia/nuxt": "^0.1.9",
-    "@unocss/nuxt": "^0.43.2",
-    "@vueuse/nuxt": "^8.8.0",
-    "nuxt": "^3.0.0-rc.4",
-    "sass": "^1.53.0",
-    "typescript": "^4.7.4"
+    "@pinia/nuxt": "^0.4.2",
+    "@unocss/nuxt": "^0.45.18",
+    "@vueuse/nuxt": "^9.2.0",
+    "nuxt": "^3.0.0-rc.9",
+    "sass": "^1.54.9",
+    "typescript": "^4.8.3",
+    "vite": "^3.1.0"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "webpack"
+      ]
+    }
   }
 }
