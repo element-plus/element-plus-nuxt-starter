@@ -1,6 +1,5 @@
 import { defineNuxtConfig } from 'nuxt'
-
-const lifecycle = process.env.npm_lifecycle_event
+import ElementPlus from 'unplugin-element-plus/vite'
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
@@ -23,13 +22,16 @@ export default defineNuxtConfig({
 
   // build
   build: {
-    transpile:
-      lifecycle === 'build' || lifecycle === 'generate' ? ['element-plus'] : [],
+    transpile: ['element-plus/es'],
   },
 
   typescript: {
     strict: true,
     shim: false,
+  },
+
+  vite: {
+    plugins: [ElementPlus()],
   },
 
   // build modules
@@ -46,15 +48,8 @@ export default defineNuxtConfig({
   unocss: {
     uno: true,
     attributify: true,
-    // preflight: true,
     icons: {
       scale: 1.2,
     },
-    shortcuts: [
-      [
-        'btn',
-        'px-4 py-1 rounded inline-block bg-teal-600 text-white cursor-pointer hover:bg-teal-700 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50',
-      ],
-    ],
   },
 })

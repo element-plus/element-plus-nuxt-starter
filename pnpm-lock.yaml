@@ -10,6 +10,7 @@ specifiers:
   pinia: ^2.0.22
   sass: ^1.54.9
   typescript: ^4.8.3
+  unplugin-element-plus: ^0.4.1
   vite: ^3.1.0
   vue: ^3.2.39
 
@@ -26,6 +27,7 @@ devDependencies:
   nuxt: 3.0.0-rc.9_bfai73kdxjhd2g7cnc63bx35ee
   sass: 1.54.9
   typescript: 4.8.3
+  unplugin-element-plus: 0.4.1_vite@3.1.0
   vite: 3.1.0_sass@1.54.9
 
 packages:
@@ -2069,6 +2071,10 @@ packages:
     hasBin: true
     dependencies:
       prr: 1.0.1
+    dev: true
+
+  /es-module-lexer/0.10.5:
+    resolution: {integrity: sha512-+7IwY/kiGAacQfY+YBhKMvEmyAJnw5grTUgjG85Pe7vcUI/6b7pZjZG8nQ7+48YhzEAEqrEgD2dCz/JIK+AYvw==}
     dev: true
 
   /esbuild-android-64/0.14.54:
@@ -4960,6 +4966,45 @@ packages:
     transitivePeerDependencies:
       - supports-color
       - vite
+    dev: true
+
+  /unplugin-element-plus/0.4.1_vite@3.1.0:
+    resolution: {integrity: sha512-x8L35sppkbtnAf+aSPXNsLPjCUrM0mWKgujqMIgrHiDQaGbpMlNnbN2kjP5CMclykNOw8fUCreEhtxPyzg8tmw==}
+    engines: {node: '>=14.19.0'}
+    dependencies:
+      '@rollup/pluginutils': 4.2.1
+      es-module-lexer: 0.10.5
+      magic-string: 0.26.3
+      unplugin: 0.7.2_vite@3.1.0
+    transitivePeerDependencies:
+      - esbuild
+      - rollup
+      - vite
+      - webpack
+    dev: true
+
+  /unplugin/0.7.2_vite@3.1.0:
+    resolution: {integrity: sha512-m7thX4jP8l5sETpLdUASoDOGOcHaOVtgNyrYlToyQUvILUtEzEnngRBrHnAX3IKqooJVmXpoa/CwQ/QqzvGaHQ==}
+    peerDependencies:
+      esbuild: '>=0.13'
+      rollup: ^2.50.0
+      vite: ^2.3.0 || ^3.0.0-0
+      webpack: 4 || 5
+    peerDependenciesMeta:
+      esbuild:
+        optional: true
+      rollup:
+        optional: true
+      vite:
+        optional: true
+      webpack:
+        optional: true
+    dependencies:
+      acorn: 8.8.0
+      chokidar: 3.5.3
+      vite: 3.1.0_sass@1.54.9
+      webpack-sources: 3.2.3
+      webpack-virtual-modules: 0.4.4
     dev: true
 
   /unplugin/0.9.5_4dwlpq3uo3pzstj2gqitvdgyci:
