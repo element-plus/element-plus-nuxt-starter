@@ -3,16 +3,16 @@ lockfileVersion: 5.4
 specifiers:
   '@element-plus/icons-vue': ^2.0.9
   '@pinia/nuxt': ^0.4.2
-  '@unocss/nuxt': ^0.45.21
-  '@vueuse/nuxt': ^9.2.0
+  '@unocss/nuxt': ^0.45.28
+  '@vueuse/nuxt': ^9.3.0
   element-plus: ^2.2.17
-  nuxt: ^3.0.0-rc.10
+  nuxt: ^3.0.0-rc.11
   pinia: ^2.0.22
-  sass: ^1.54.9
-  typescript: ^4.8.3
+  sass: ^1.55.0
+  typescript: ^4.8.4
   unplugin-element-plus: ^0.4.1
-  vite: ^3.1.1
-  vue: ^3.2.39
+  vite: ^3.1.6
+  vue: ^3.2.40
 
 dependencies:
   '@element-plus/icons-vue': 2.0.9_vue@3.2.40
