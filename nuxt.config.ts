@@ -1,4 +1,3 @@
-import { defineNuxtConfig } from 'nuxt'
 import ElementPlus from 'unplugin-element-plus/vite'
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
@@ -49,7 +48,8 @@ export default defineNuxtConfig({
     uno: true,
     attributify: true,
     icons: {
-      scale: 1.2,
+      scale: 1,
+      cdn: 'https://esm.sh/',
     },
   },
 })

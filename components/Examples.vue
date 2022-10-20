@@ -1,7 +1,9 @@
 <template>
   <el-dropdown class="m-4" type="primary">
     <el-button type="primary">
-      Dropdown List<el-icon class="el-icon--right"><arrow-down /></el-icon>
+      Dropdown List<el-icon class="el-icon--right">
+        <arrow-down />
+      </el-icon>
     </el-button>
     <template #dropdown>
       <el-dropdown-menu>
@@ -26,25 +28,24 @@
 
   <br />
 
-  <el-icon class="cursor-pointer">
-    <Grape />
-  </el-icon>
-  <el-icon class="cursor-pointer">
-    <IceCream />
-  </el-icon>
-  <el-icon class="cursor-pointer mb-4">
-    <IceDrink />
-  </el-icon>
+  <div flex="~ gap-2" justify-center items-center>
+    <el-icon class="cursor-pointer">
+      <Grape />
+    </el-icon>
+    <el-icon class="cursor-pointer">
+      <IceCream />
+    </el-icon>
+    <el-icon class="cursor-pointer">
+      <IceDrink />
+    </el-icon>
+    <div class="i-logos-element"></div>
+  </div>
 
   <br />
 
   <client-only>
     <el-config-provider :locale="zhCn">
-      <el-date-picker
-        v-model="timeValue"
-        type="date"
-        placeholder="请选择日期"
-      ></el-date-picker>
+      <el-date-picker v-model="timeValue" type="date" placeholder="请选择日期"></el-date-picker>
     </el-config-provider>
   </client-only>
 </template>
