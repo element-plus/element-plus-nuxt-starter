@@ -27,9 +27,9 @@
     "@pinia/nuxt": "^0.4.2",
     "@unocss/nuxt": "^0.45.28",
     "@vueuse/nuxt": "^9.3.0",
-    "nuxt": "^3.0.0-rc.11",
+    "nuxt": "^3.0.0",
     "sass": "^1.55.0",
-    "typescript": "^4.8.4",
+    "typescript": "^4.9.3",
     "unplugin-element-plus": "^0.4.1",
     "vite": "^3.1.6"
   },
