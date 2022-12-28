@@ -1,20 +1,21 @@
-import { defineNuxtConfig } from 'nuxt'
 import ElementPlus from 'unplugin-element-plus/vite'
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-  // meta
-  meta: {
-    title: 'Element Plus + Nuxt 3',
-    meta: [
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'ElementPlus + Nuxt3',
-      },
-    ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+  app: {
+    // head
+    head: {
+      title: 'Element Plus + Nuxt 3',
+      meta: [
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'ElementPlus + Nuxt3',
+        },
+      ],
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    }
   },
 
   // css
