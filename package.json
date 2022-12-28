@@ -1,6 +1,6 @@
 {
   "name": "element-plus-nuxt-starter",
-  "packageManager": "pnpm@7.11.0",
+  "packageManager": "pnpm@7.20.0",
   "version": "0.1.0",
   "description": "Element Plus with Nuxt 3 Minimal Starter",
   "repository": {
@@ -17,28 +17,23 @@
     "start": "node .output/server/index.mjs",
     "generate": "nuxi generate"
   },
-  "dependencies": {
-    "@element-plus/icons-vue": "^2.0.9",
-    "element-plus": "^2.2.17",
-    "pinia": "^2.0.22",
-    "vue": "^3.2.40"
-  },
   "devDependencies": {
-    "@nuxt/vite-builder": "^3.0.0",
+    "@element-plus/icons-vue": "^2.0.10",
     "@pinia/nuxt": "^0.4.6",
-    "@unocss/nuxt": "^0.47.5",
-    "@vueuse/nuxt": "^9.6.0",
+    "@unocss/nuxt": "^0.48.0",
+    "@vueuse/nuxt": "^9.9.0",
+    "element-plus": "^2.2.27",
     "nuxt": "^3.0.0",
-    "sass": "^1.55.0",
-    "typescript": "^4.8.4",
+    "sass": "^1.57.1",
+    "typescript": "^4.9.4",
     "unplugin-element-plus": "^0.4.1",
-    "vite": "^3.1.6",
     "vue-router": "^4.1.6"
   },
   "pnpm": {
     "peerDependencyRules": {
       "ignoreMissing": [
-        "webpack"
+        "webpack",
+        "vite"
       ]
     }
   }
