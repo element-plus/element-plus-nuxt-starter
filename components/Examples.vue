@@ -1,7 +1,10 @@
 <template>
   <el-dropdown class="m-4" type="primary">
     <el-button type="primary">
-      Dropdown List<el-icon class="el-icon--right"><arrow-down /></el-icon>
+      Dropdown List
+      <el-icon class="el-icon--right">
+        <el-icon-arrow-down />
+      </el-icon>
     </el-button>
     <template #dropdown>
       <el-dropdown-menu>
@@ -16,7 +19,7 @@
 
   <br />
 
-  <el-button class="m-4" @click="hello">Hello</el-button>
+  <el-button :icon="ElIconView" class="m-4" @click="hello">Hello</el-button>
   <el-button class="m-4" type="primary" @click="hello">Hello</el-button>
   <el-button class="m-4" type="success" @click="helloSuccess">Hello</el-button>
 
@@ -27,41 +30,28 @@
   <br />
 
   <el-icon class="cursor-pointer">
-    <Grape />
+    <el-icon-grape />
   </el-icon>
   <el-icon class="cursor-pointer">
-    <IceCream />
+    <ElIconIceCream />
   </el-icon>
   <el-icon class="cursor-pointer mb-4">
-    <IceDrink />
+    <ElIconIceDrink />
   </el-icon>
 
   <br />
 
-  <client-only>
-    <el-config-provider :locale="zhCn">
-      <el-date-picker
-        v-model="timeValue"
-        type="date"
-        placeholder="请选择日期"
-      ></el-date-picker>
-    </el-config-provider>
-  </client-only>
+  <el-config-provider :locale="zhCn">
+    <el-date-picker
+      v-model="timeValue"
+      type="date"
+      placeholder="请选择日期"
+    />
+  </el-config-provider>
 </template>
 
 <script setup lang="ts">
-import {
-  ElIcon,
-  ElButton,
-  ElDropdown,
-  ElDropdownMenu,
-  ElDropdownItem,
-  ElConfigProvider,
-  ElDatePicker,
-  ElMessage,
-} from "element-plus";
 import zhCn from "element-plus/es/locale/lang/zh-cn";
-import { Grape, IceCream, IceDrink, ArrowDown } from "@element-plus/icons-vue";
 
 const timeValue = ref("");
 const hello = () => ElMessage.info("hello world");

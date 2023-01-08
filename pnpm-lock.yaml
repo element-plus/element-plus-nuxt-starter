@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@element-plus/icons-vue': ^2.0.10
+  '@element-plus/nuxt': ^1.0.1
   '@pinia/nuxt': ^0.4.6
   '@unocss/nuxt': ^0.48.0
   '@vueuse/nuxt': ^9.9.0
@@ -9,11 +10,11 @@ specifiers:
   nuxt: ^3.0.0
   sass: ^1.57.1
   typescript: ^4.9.4
-  unplugin-element-plus: ^0.4.1
   vue-router: ^4.1.6
 
 devDependencies:
   '@element-plus/icons-vue': 2.0.10
+  '@element-plus/nuxt': 1.0.1_tjzx7iko7dkq2vnhx32zq7iuiu
   '@pinia/nuxt': 0.4.6_typescript@4.9.4
   '@unocss/nuxt': 0.48.0
   '@vueuse/nuxt': 9.9.0_nuxt@3.0.0
@@ -21,7 +22,6 @@ devDependencies:
   nuxt: 3.0.0_i6pugmai7ijdp77xabx7o4exnq
   sass: 1.57.1
   typescript: 4.9.4
-  unplugin-element-plus: 0.4.1
   vue-router: 4.1.6
 
 packages:
@@ -355,6 +355,22 @@ packages:
     resolution: {integrity: sha512-ygEZ1mwPjcPo/OulhzLE7mtDrQBWI8vZzEWSNB2W/RNCRjoQGwbaK4N8lV4rid7Ts4qvySU3njMN7YCiSlSaTQ==}
     peerDependencies:
       vue: ^3.2.0
+    dev: true
+
+  /@element-plus/nuxt/1.0.1_tjzx7iko7dkq2vnhx32zq7iuiu:
+    resolution: {integrity: sha512-77amq7e4DYxINYiijenp+0aiqBcqEZfNjA94LZZNk83DpA+xX7nM+cFaAOT02mzNzlhMXCCoWT1SyzRyKEw7og==}
+    peerDependencies:
+      '@element-plus/icons-vue': '>=0.2.6'
+      element-plus: '>=2'
+    dependencies:
+      '@element-plus/icons-vue': 2.0.10
+      '@nuxt/kit': 3.0.0
+      element-plus: 2.2.27
+      magic-string: 0.27.0
+      unplugin: 1.0.1
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
     dev: true
 
   /@esbuild/android-arm/0.15.18:
@@ -2162,10 +2178,6 @@ packages:
     hasBin: true
     dependencies:
       prr: 1.0.1
-    dev: true
-
-  /es-module-lexer/0.10.5:
-    resolution: {integrity: sha512-+7IwY/kiGAacQfY+YBhKMvEmyAJnw5grTUgjG85Pe7vcUI/6b7pZjZG8nQ7+48YhzEAEqrEgD2dCz/JIK+AYvw==}
     dev: true
 
   /esbuild-android-64/0.15.18:
@@ -4825,44 +4837,6 @@ packages:
       - vite
     dev: true
 
-  /unplugin-element-plus/0.4.1:
-    resolution: {integrity: sha512-x8L35sppkbtnAf+aSPXNsLPjCUrM0mWKgujqMIgrHiDQaGbpMlNnbN2kjP5CMclykNOw8fUCreEhtxPyzg8tmw==}
-    engines: {node: '>=14.19.0'}
-    dependencies:
-      '@rollup/pluginutils': 4.2.1
-      es-module-lexer: 0.10.5
-      magic-string: 0.26.7
-      unplugin: 0.7.2
-    transitivePeerDependencies:
-      - esbuild
-      - rollup
-      - vite
-      - webpack
-    dev: true
-
-  /unplugin/0.7.2:
-    resolution: {integrity: sha512-m7thX4jP8l5sETpLdUASoDOGOcHaOVtgNyrYlToyQUvILUtEzEnngRBrHnAX3IKqooJVmXpoa/CwQ/QqzvGaHQ==}
-    peerDependencies:
-      esbuild: '>=0.13'
-      rollup: ^2.50.0
-      vite: ^2.3.0 || ^3.0.0-0
-      webpack: 4 || 5
-    peerDependenciesMeta:
-      esbuild:
-        optional: true
-      rollup:
-        optional: true
-      vite:
-        optional: true
-      webpack:
-        optional: true
-    dependencies:
-      acorn: 8.8.1
-      chokidar: 3.5.3
-      webpack-sources: 3.2.3
-      webpack-virtual-modules: 0.4.6
-    dev: true
-
   /unplugin/1.0.1:
     resolution: {integrity: sha512-aqrHaVBWW1JVKBHmGo33T5TxeL0qWzfvjWokObHA9bYmN7eNDkwOxmLjhioHl9878qDFMAaT51XNroRyuz7WxA==}
     dependencies:
@@ -5130,10 +5104,6 @@ packages:
   /webpack-sources/3.2.3:
     resolution: {integrity: sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==}
     engines: {node: '>=10.13.0'}
-    dev: true
-
-  /webpack-virtual-modules/0.4.6:
-    resolution: {integrity: sha512-5tyDlKLqPfMqjT3Q9TAqf2YqjwmnUleZwzJi1A5qXnlBCdj2AtOJ6wAWdglTIDOPgOiOrXeBeFcsQ8+aGQ6QbA==}
     dev: true
 
   /webpack-virtual-modules/0.5.0:
