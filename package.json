@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@element-plus/icons-vue": "^2.0.10",
-    "@element-plus/nuxt": "^1.0.1",
+    "@element-plus/nuxt": "^1.0.2",
     "@pinia/nuxt": "^0.4.6",
     "@unocss/nuxt": "^0.48.0",
     "@vueuse/nuxt": "^9.9.0",

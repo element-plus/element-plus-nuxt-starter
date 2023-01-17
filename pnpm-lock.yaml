@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@element-plus/icons-vue': ^2.0.10
-  '@element-plus/nuxt': ^1.0.1
+  '@element-plus/nuxt': ^1.0.2
   '@pinia/nuxt': ^0.4.6
   '@unocss/nuxt': ^0.48.0
   '@vueuse/nuxt': ^9.9.0
@@ -14,7 +14,7 @@ specifiers:
 
 devDependencies:
   '@element-plus/icons-vue': 2.0.10
-  '@element-plus/nuxt': 1.0.1_tjzx7iko7dkq2vnhx32zq7iuiu
+  '@element-plus/nuxt': 1.0.2_tjzx7iko7dkq2vnhx32zq7iuiu
   '@pinia/nuxt': 0.4.6_typescript@4.9.4
   '@unocss/nuxt': 0.48.0
   '@vueuse/nuxt': 9.9.0_nuxt@3.0.0
@@ -355,10 +355,13 @@ packages:
     resolution: {integrity: sha512-ygEZ1mwPjcPo/OulhzLE7mtDrQBWI8vZzEWSNB2W/RNCRjoQGwbaK4N8lV4rid7Ts4qvySU3njMN7YCiSlSaTQ==}
     peerDependencies:
       vue: ^3.2.0
+    peerDependenciesMeta:
+      vue:
+        optional: true
     dev: true
 
-  /@element-plus/nuxt/1.0.1_tjzx7iko7dkq2vnhx32zq7iuiu:
-    resolution: {integrity: sha512-77amq7e4DYxINYiijenp+0aiqBcqEZfNjA94LZZNk83DpA+xX7nM+cFaAOT02mzNzlhMXCCoWT1SyzRyKEw7og==}
+  /@element-plus/nuxt/1.0.2_tjzx7iko7dkq2vnhx32zq7iuiu:
+    resolution: {integrity: sha512-ztEtmBvsgdbOatQyFgCxZnYh/cVHolyRWRNJgddP72Nek5IgwZYkwA48Chpz5druE5XKGrkzYIByvcCX4NAsGw==}
     peerDependencies:
       '@element-plus/icons-vue': '>=0.2.6'
       element-plus: '>=2'
@@ -651,6 +654,9 @@ packages:
     engines: {node: ^14.16.0 || ^16.10.0 || ^17.0.0 || ^18.0.0 || ^19.0.0}
     peerDependencies:
       vue: ^3.2.45
+    peerDependenciesMeta:
+      vue:
+        optional: true
     dependencies:
       '@nuxt/kit': 3.0.0_rollup@2.79.1
       '@rollup/plugin-replace': 5.0.2_rollup@2.79.1
@@ -918,6 +924,9 @@ packages:
     resolution: {integrity: sha512-PwJLCSq/eVLbLw7SbMCa20rEeL301w52UG2YhRpQTfsChBMBRGg3Nsl/PPWIurwkBXPpCsVL3AFppaCK5BCJ5Q==}
     peerDependencies:
       vue: '>=2.7 || >=3'
+    peerDependenciesMeta:
+      vue:
+        optional: true
     dependencies:
       '@unhead/schema': 1.0.14
       hookable: 5.4.2
@@ -1162,6 +1171,8 @@ packages:
     peerDependenciesMeta:
       vite:
         optional: true
+      vue:
+        optional: true
     dependencies:
       '@babel/core': 7.20.7
       '@babel/plugin-transform-typescript': 7.20.7_@babel+core@7.20.7
@@ -1180,6 +1191,8 @@ packages:
       vue: ^3.2.25
     peerDependenciesMeta:
       vite:
+        optional: true
+      vue:
         optional: true
     dependencies:
       vite: 3.2.5_sass@1.57.1
@@ -1284,6 +1297,9 @@ packages:
     resolution: {integrity: sha512-ebiMq7q24WBU1D6uhPK//2OTR1iRIyxjF5iVq/1a5I1SDMDyDu4Ts6fJaMnjrvD3MqnaiFkKQj+LKAgz5WIK3g==}
     peerDependencies:
       vue: 3.2.45
+    peerDependenciesMeta:
+      vue:
+        optional: true
     dependencies:
       '@vue/compiler-ssr': 3.2.45
       '@vue/shared': 3.2.45
@@ -1310,6 +1326,9 @@ packages:
     resolution: {integrity: sha512-YmUdbzNdCnhmrAFxGnJS+Rixj+swE+TQC9OEaYDHIro6gE7W11jugcdwVP00HrA4WRQhg+TOQ4YcY2oL/PP1hw==}
     peerDependencies:
       vue: '>=2.7 || >=3'
+    peerDependenciesMeta:
+      vue:
+        optional: true
     dependencies:
       '@unhead/dom': 1.0.14
       '@unhead/schema': 1.0.14
@@ -2113,6 +2132,9 @@ packages:
     resolution: {integrity: sha512-P04HDOZBYDdvlYuleuCZRULzAc5xJVOBfLDK9xWxVo0vyo8ntdaXS5sTU+/76vrNzuO3FhLn9kvrsbiJEVa1jg==}
     peerDependencies:
       vue: ^3.2.0
+    peerDependenciesMeta:
+      vue:
+        optional: true
     dependencies:
       '@ctrl/tinycolor': 3.5.0
       '@element-plus/icons-vue': 2.0.10
@@ -3784,6 +3806,8 @@ packages:
         optional: true
       typescript:
         optional: true
+      vue:
+        optional: true
     dependencies:
       '@vue/devtools-api': 6.4.5
       typescript: 4.9.4
@@ -5053,6 +5077,8 @@ packages:
     peerDependenciesMeta:
       '@vue/composition-api':
         optional: true
+      vue:
+        optional: true
     dev: true
 
   /vue-devtools-stub/0.1.0:
@@ -5063,6 +5089,9 @@ packages:
     resolution: {integrity: sha512-DYWYwsG6xNPmLq/FmZn8Ip+qrhFEzA14EI12MsMgVxvHFDYvlr4NXpVF5hrRH1wVcDP8fGi5F4rxuJSl8/r+EQ==}
     peerDependencies:
       vue: ^3.2.0
+    peerDependenciesMeta:
+      vue:
+        optional: true
     dependencies:
       '@vue/devtools-api': 6.4.5
     dev: true
@@ -5071,6 +5100,9 @@ packages:
     resolution: {integrity: sha512-DYWYwsG6xNPmLq/FmZn8Ip+qrhFEzA14EI12MsMgVxvHFDYvlr4NXpVF5hrRH1wVcDP8fGi5F4rxuJSl8/r+EQ==}
     peerDependencies:
       vue: ^3.2.0
+    peerDependenciesMeta:
+      vue:
+        optional: true
     dependencies:
       '@vue/devtools-api': 6.4.5
       vue: 3.2.45
