@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { ElIcon } from 'element-plus'
-import { Plus } from '@element-plus/icons-vue'
 </script>
 
 <template>
@@ -9,7 +7,7 @@ import { Plus } from '@element-plus/icons-vue'
       class="logo"
       src="https://element-plus.org/images/element-plus-logo.svg"
     />
-    <el-icon><Plus /></el-icon>
+    <el-icon><ElIconPlus /></el-icon>
     <NuxtLogo class="logo" />
   </div>
   <h2>

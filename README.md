@@ -4,9 +4,6 @@
 🏗 Working in Progress
 </pre>
 
-> Nuxt 3 is still beta, we may need to keep updating to adapt it.
-> It doesn't work very well yet.
-
 SSR Preview: <https://element-plus-nuxt.vercel.app/>
 
 SSG Preview: <https://nuxt-starter.element-plus.org/>

@@ -1,5 +1,3 @@
-import ElementPlus from 'unplugin-element-plus/vite'
-
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
   app: {
@@ -21,25 +19,18 @@ export default defineNuxtConfig({
   // css
   css: ['~/assets/scss/index.scss'],
 
-  // build
-  build: {
-    transpile: ['element-plus/es'],
-  },
-
   typescript: {
     strict: true,
     shim: false,
   },
 
-  vite: {
-    plugins: [ElementPlus()],
-  },
-
   // build modules
-  modules: ['@vueuse/nuxt', '@unocss/nuxt', '@pinia/nuxt'],
-
-  // auto import components
-  components: true,
+  modules: [
+    '@vueuse/nuxt',
+    '@unocss/nuxt',
+    '@pinia/nuxt',
+    '@element-plus/nuxt',
+  ],
 
   // vueuse
   vueuse: {
@@ -52,5 +43,9 @@ export default defineNuxtConfig({
     icons: {
       scale: 1.2,
     },
+  },
+
+  elementPlus: {
+    icon: 'ElIcon',
   },
 })
