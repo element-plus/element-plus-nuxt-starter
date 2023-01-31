@@ -1,4 +1,8 @@
 <template>
+  <el-switch v-model="colorMode" inline-prompt active-text="暗夜" inactive-text="白天" size="large"></el-switch>
+
+  <br />
+
   <el-dropdown class="m-4" type="primary">
     <el-button type="primary">
       Dropdown List
@@ -56,4 +60,10 @@ import zhCn from "element-plus/es/locale/lang/zh-cn";
 const timeValue = ref("");
 const hello = () => ElMessage.info("hello world");
 const helloSuccess = () => ElMessage.success("hello world");
+
+const color = useColorMode();
+const colorMode = computed({
+  get: () => color.value === 'dark',
+    set: () => (color.preference = color.value === 'dark' ? 'light' : 'dark'),
+});
 </script>

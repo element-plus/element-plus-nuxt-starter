@@ -20,6 +20,7 @@
   "devDependencies": {
     "@element-plus/icons-vue": "^2.0.10",
     "@element-plus/nuxt": "^1.0.2",
+    "@nuxtjs/color-mode": "^3.2.0",
     "@pinia/nuxt": "^0.4.6",
     "@unocss/nuxt": "^0.48.0",
     "@vueuse/nuxt": "^9.9.0",
