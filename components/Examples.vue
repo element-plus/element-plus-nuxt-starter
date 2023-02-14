@@ -1,5 +1,5 @@
 <template>
-  <el-switch v-model="colorMode" inline-prompt active-text="暗夜" inactive-text="白天" size="large"></el-switch>
+  <el-switch v-model="colorMode" inline-prompt active-text="dark" inactive-text="light" size="large"></el-switch>
 
   <br />
 
@@ -64,6 +64,6 @@ const helloSuccess = () => ElMessage.success("hello world");
 const color = useColorMode();
 const colorMode = computed({
   get: () => color.value === 'dark',
-    set: () => (color.preference = color.value === 'dark' ? 'light' : 'dark'),
+  set: () => (color.preference = color.value === 'dark' ? 'light' : 'dark'),
 });
 </script>
