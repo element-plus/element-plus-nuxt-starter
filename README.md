@@ -8,7 +8,7 @@ SSR Preview: <https://element-plus-nuxt.vercel.app/>
 
 SSG Preview: <https://nuxt-starter.element-plus.org/>
 
-We recommend to look at the [Nuxt 3 Docs](https://v3.nuxtjs.org) and [Element Plus Docs](https://element-plus.org/).
+We recommend to look at the [Nuxt 3 Docs](https://nuxt.com/) and [Element Plus Docs](https://element-plus.org/).
 
 ## Setup
 
@@ -26,7 +26,7 @@ Start the development server on `http://localhost:3000`
 yarn dev
 ```
 
-More info about [nuxt deployment](https://v3.nuxtjs.org/docs/deployment/presets).
+More info about [nuxt deployment](https://nuxt.com/docs/getting-started/deployment#presets).
 
 Run `npm run generate` to generate static html in `.output/public`.
 
@@ -38,7 +38,7 @@ Build the application for production:
 yarn build
 ```
 
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).
+Checkout the [deployment documentation](https://nuxt.com/docs/getting-started/deployment).
 
 ## Ref
 
