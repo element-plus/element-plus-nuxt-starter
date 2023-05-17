@@ -40,6 +40,10 @@ pnpm build
 
 Checkout the [deployment documentation](https://nuxt.com/docs/getting-started/deployment).
 
+## Deploy
+
+You need set `NITRO_PRESET=vercel-edge`, see [Nuxt on Vercel](https://vercel.com/docs/frameworks/nuxt#edge-functions).
+
 ## Ref
 
 - [vitesse-nuxt3](https://github.com/antfu/vitesse-nuxt3)
