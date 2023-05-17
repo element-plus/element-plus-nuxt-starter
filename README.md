@@ -15,7 +15,7 @@ We recommend to look at the [Nuxt 3 Docs](https://nuxt.com/) and [Element Plus D
 Make sure to install the dependencies
 
 ```bash
-yarn install
+pnpm install
 ```
 
 ## Development
@@ -23,7 +23,7 @@ yarn install
 Start the development server on `http://localhost:3000`
 
 ```bash
-yarn dev
+pnpm dev
 ```
 
 More info about [nuxt deployment](https://nuxt.com/docs/getting-started/deployment#presets).
@@ -35,7 +35,7 @@ Run `npm run generate` to generate static html in `.output/public`.
 Build the application for production:
 
 ```bash
-yarn build
+pnpm build
 ```
 
 Checkout the [deployment documentation](https://nuxt.com/docs/getting-started/deployment).
