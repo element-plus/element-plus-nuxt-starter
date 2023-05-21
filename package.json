@@ -1,6 +1,6 @@
 {
   "name": "element-plus-nuxt-starter",
-  "packageManager": "pnpm@7.20.0",
+  "packageManager": "pnpm@8.5.1",
   "version": "0.1.0",
   "description": "Element Plus with Nuxt 3 Minimal Starter",
   "repository": {
