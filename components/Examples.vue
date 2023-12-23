@@ -1,5 +1,22 @@
+<script setup lang="ts">
+import zhCn from "element-plus/es/locale/lang/zh-cn";
+
+const timeValue = ref("");
+const hello = () => ElMessage.info("hello world");
+const helloSuccess = () => ElMessage.success("hello world");
+
+const color = useColorMode();
+const colorMode = computed({
+  get: () => color.value === 'dark',
+  set: () => (color.preference = (color.value === 'dark' ? 'light' : 'dark')),
+});
+</script>
+
+
 <template>
-  <el-switch v-model="colorMode" inline-prompt active-text="dark" inactive-text="light" size="large"></el-switch>
+  <ClientOnly>
+    <el-switch v-model="colorMode" inline-prompt active-text="dark" inactive-text="light" size="large"></el-switch>
+  </ClientOnly>
 
   <br />
 
@@ -53,17 +70,3 @@
     />
   </el-config-provider>
 </template>
-
-<script setup lang="ts">
-import zhCn from "element-plus/es/locale/lang/zh-cn";
-
-const timeValue = ref("");
-const hello = () => ElMessage.info("hello world");
-const helloSuccess = () => ElMessage.success("hello world");
-
-const color = useColorMode();
-const colorMode = computed({
-  get: () => color.value === 'dark',
-  set: () => (color.preference = color.value === 'dark' ? 'light' : 'dark'),
-});
-</script>

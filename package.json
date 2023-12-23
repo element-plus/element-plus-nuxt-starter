@@ -1,6 +1,6 @@
 {
   "name": "element-plus-nuxt-starter",
-  "packageManager": "pnpm@8.8.0",
+  "packageManager": "pnpm@8.12.1",
   "version": "0.1.0",
   "description": "Element Plus with Nuxt 3 Minimal Starter",
   "repository": {
@@ -20,19 +20,19 @@
     "postinstall": "nuxi prepare"
   },
   "dependencies": {
-    "@element-plus/icons-vue": "^2.1.0",
-    "element-plus": "^2.3.14"
+    "@element-plus/icons-vue": "^2.3.1",
+    "element-plus": "^2.4.4"
   },
   "devDependencies": {
-    "@element-plus/nuxt": "^1.0.6",
-    "@nuxtjs/color-mode": "^3.3.0",
-    "@pinia/nuxt": "^0.4.11",
-    "@unocss/nuxt": "^0.53.6",
-    "@vueuse/nuxt": "^10.4.1",
+    "@element-plus/nuxt": "^1.0.7",
+    "@nuxtjs/color-mode": "^3.3.2",
+    "@pinia/nuxt": "^0.5.1",
+    "@unocss/nuxt": "^0.58.0",
+    "@vueuse/nuxt": "^10.7.0",
     "consola": "^3.2.3",
-    "nuxt": "^3.7.4",
-    "sass": "^1.68.0",
-    "typescript": "^5.2.2"
+    "nuxt": "^3.8.2",
+    "sass": "^1.69.5",
+    "typescript": "^5.3.3"
   },
   "peerDependencies": {
     "pinia": "^2.1.6"
