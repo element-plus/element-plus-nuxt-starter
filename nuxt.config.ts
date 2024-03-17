@@ -1,5 +1,15 @@
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
+  pages: true,
+
+  ssr: true,
+
+  spaLoadingTemplate: false,
+
+  devServer: {
+    port: 3002
+  },
+
   app: {
     // head
     head: {
