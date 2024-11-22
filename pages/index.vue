@@ -1,7 +1,7 @@
 <template>
   <div class="page-index">
-    <Logos />
-    <Examples />
+    <TheLogos />
+    <TheExamples />
   </div>
 </template>
 

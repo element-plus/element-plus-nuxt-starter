@@ -26,6 +26,7 @@ export default defineNuxtConfig({
 
   // build modules
   modules: [
+    '@nuxt/eslint',
     '@vueuse/nuxt',
     '@unocss/nuxt',
     '@pinia/nuxt',
@@ -50,18 +51,23 @@ export default defineNuxtConfig({
       scale: 1.2,
     },
   },
+
   vite: {
     css: {
       preprocessorOptions: {
         scss: {
+          api: 'modern-compiler',
           additionalData: `@use "@/assets/scss/element/index.scss" as element;`,
         },
       },
     },
   },
+
   elementPlus: {
     icon: 'ElIcon',
     importStyle: 'scss',
     themes: ['dark'],
   },
+
+  compatibilityDate: '2024-11-23',
 })

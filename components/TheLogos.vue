@@ -6,7 +6,7 @@
     <img
       class="logo"
       src="https://element-plus.org/images/element-plus-logo.svg"
-    />
+    >
     <el-icon><ElIconPlus /></el-icon>
     <NuxtLogo class="logo" />
   </div>

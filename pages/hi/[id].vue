@@ -24,7 +24,7 @@ watchEffect(() => {
       </ul>
     </template>
 
-    <Counter />
+    <TheCounter />
 
     <div>
       <NuxtLink to="/">Back</NuxtLink>

@@ -12,13 +12,12 @@ const colorMode = computed({
 });
 </script>
 
-
 <template>
   <ClientOnly>
-    <el-switch v-model="colorMode" inline-prompt active-text="dark" inactive-text="light" size="large"></el-switch>
+    <el-switch v-model="colorMode" inline-prompt active-text="dark" inactive-text="light" size="large"/>
   </ClientOnly>
 
-  <br />
+  <br >
 
   <el-dropdown class="m-4" type="primary">
     <el-button type="primary">
@@ -38,17 +37,17 @@ const colorMode = computed({
     </template>
   </el-dropdown>
 
-  <br />
+  <br >
 
   <el-button :icon="ElIconView" class="m-4" @click="hello">Hello</el-button>
   <el-button class="m-4" type="primary" @click="hello">Hello</el-button>
   <el-button class="m-4" type="success" @click="helloSuccess">Hello</el-button>
 
-  <br />
+  <br >
 
-  <Counter class="m-4" />
+  <TheCounter class="m-4" />
 
-  <br />
+  <br >
 
   <el-icon class="cursor-pointer">
     <el-icon-grape />
@@ -60,7 +59,7 @@ const colorMode = computed({
     <ElIconIceDrink />
   </el-icon>
 
-  <br />
+  <br >
 
   <el-config-provider :locale="zhCn">
     <el-date-picker
