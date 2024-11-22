@@ -1,3 +1,9 @@
+<script setup lang="ts">
+definePageMeta({
+  layout: 'home',
+})
+</script>
+
 <template>
   <div class="page-index">
     <TheLogos />

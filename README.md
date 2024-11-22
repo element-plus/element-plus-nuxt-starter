@@ -1,14 +1,11 @@
 # Element Plus with Nuxt 3 Minimal Starter
 
-<pre align="center">
-🏗 Working in Progress
-</pre>
-
-SSR Preview: <https://element-plus-nuxt.vercel.app/>
-
-SSG Preview: <https://nuxt-starter.element-plus.org/>
+- SSR Preview: <https://element-plus-nuxt.vercel.app/>
+- SSG Preview: <https://nuxt-starter.element-plus.org/>
 
 We recommend to look at the [Nuxt 3 Docs](https://nuxt.com/) and [Element Plus Docs](https://element-plus.org/).
+
+> If you are looking for a Vite + Vue + Element Plus starter, check out [element-plus-vite-starter](https://github.com/element-plus/element-plus-vite-starter/).
 
 ## Setup
 

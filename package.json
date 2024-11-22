@@ -1,15 +1,16 @@
 {
   "name": "element-plus-nuxt-starter",
+  "type": "module",
+  "private": true,
   "packageManager": "pnpm@9.14.2",
   "version": "0.1.0",
   "description": "Element Plus with Nuxt 3 Minimal Starter",
   "repository": {
     "type": "git",
-    "url": "git://github.com/element-plus/element-plus-nuxt-starter"
+    "url": "https://github.com/element-plus/element-plus-nuxt-starter"
   },
   "author": "Element Plus Team",
   "license": "MIT",
-  "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "dev": "nuxi dev",
@@ -19,7 +20,8 @@
     "preview": "nuxi preview",
     "start": "node .output/server/index.mjs",
     "generate": "nuxi generate",
-    "prepare": "nuxi prepare"
+    "prepare": "nuxi prepare",
+    "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
@@ -27,6 +29,7 @@
   },
   "devDependencies": {
     "@element-plus/nuxt": "^1.1.0",
+    "@iconify-json/ri": "^1.2.3",
     "@nuxt/eslint": "^0.7.1",
     "@nuxtjs/color-mode": "^3.5.2",
     "@pinia/nuxt": "^0.7.0",
@@ -36,7 +39,8 @@
     "eslint": "^9.15.0",
     "nuxt": "^3.14.1592",
     "sass": "^1.81.0",
-    "typescript": "^5.6.3"
+    "typescript": "^5.6.3",
+    "vue-tsc": "^2.1.10"
   },
   "peerDependencies": {
     "pinia": "^2.1.6"

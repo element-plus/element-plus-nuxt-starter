@@ -1,5 +1,18 @@
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
+  modules: [
+    '@nuxt/eslint',
+    '@vueuse/nuxt',
+    '@unocss/nuxt',
+    '@pinia/nuxt',
+    '@element-plus/nuxt',
+    '@nuxtjs/color-mode'
+  ],
+
+  devtools: {
+    enabled: true,
+  },
+
   app: {
     // head
     head: {
@@ -17,21 +30,9 @@ export default defineNuxtConfig({
   },
 
   // css
-  css: ['~/assets/scss/index.scss'],
-
-  typescript: {
-    strict: true,
-    shim: false,
-  },
-
-  // build modules
-  modules: [
-    '@nuxt/eslint',
-    '@vueuse/nuxt',
-    '@unocss/nuxt',
-    '@pinia/nuxt',
-    '@element-plus/nuxt',
-    '@nuxtjs/color-mode'
+  css: [
+    '@unocss/reset/tailwind.css',
+    '~/assets/scss/index.scss'
   ],
 
   // vueuse
@@ -44,11 +45,30 @@ export default defineNuxtConfig({
     classSuffix: '',
   },
 
-  unocss: {
-    uno: true,
-    attributify: true,
-    icons: {
-      scale: 1.2,
+  future: {
+    compatibilityVersion: 4,
+  },
+
+  experimental: {
+    // when using generate, payload js assets included in sw precache manifest
+    // but missing on offline, disabling extraction it until fixed
+    payloadExtraction: false,
+    renderJsonPayloads: true,
+    typedPages: true,
+  },
+
+  compatibilityDate: '2024-08-14',
+
+  nitro: {
+    esbuild: {
+      options: {
+        target: 'esnext',
+      },
+    },
+    prerender: {
+      crawlLinks: false,
+      routes: ['/'],
+      ignore: ['/hi'],
     },
   },
 
@@ -68,6 +88,4 @@ export default defineNuxtConfig({
     importStyle: 'scss',
     themes: ['dark'],
   },
-
-  compatibilityDate: '2024-11-23',
 })
