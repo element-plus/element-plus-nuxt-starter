@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import zhCn from "element-plus/es/locale/lang/zh-cn";
 
-const timeValue = ref("");
 const hello = () => ElMessage.info("hello world");
 const helloSuccess = () => ElMessage.success("hello world");
 
@@ -47,25 +45,11 @@ const colorMode = computed({
 
   <TheCounter class="m-4" />
 
-  <br >
-
-  <el-icon class="cursor-pointer">
-    <el-icon-grape />
-  </el-icon>
-  <el-icon class="cursor-pointer">
-    <ElIconIceCream />
-  </el-icon>
-  <el-icon class="cursor-pointer mb-4">
-    <ElIconIceDrink />
-  </el-icon>
-
-  <br >
-
-  <el-config-provider :locale="zhCn">
-    <el-date-picker
-      v-model="timeValue"
-      type="date"
-      placeholder="请选择日期"
-    />
-  </el-config-provider>
+  <div class="flex flex-col gap-2 items-center justify-center">
+    <ExampleDatePickers />
+    <ExampleIcons />
+    <ExampleButtons />
+    <ExampleSwitches />
+    <ExampleTags />
+  </div>
 </template>
