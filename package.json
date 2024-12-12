@@ -39,7 +39,7 @@
     "eslint": "^9.16.0",
     "nuxt": "^3.14.1592",
     "sass": "^1.82.0",
-    "typescript": "^5.7.2",
+    "typescript": "^5.6.3",
     "vue-tsc": "^2.1.10"
   },
   "peerDependencies": {
