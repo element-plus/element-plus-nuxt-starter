@@ -1,2 +1,2 @@
-export const appName = 'Element Plus Nuxt Stater'
-export const appDescription = 'Nuxt Stater for Element Plus'
+export const appName = 'Element Plus Nuxt Statrer'
+export const appDescription = 'Nuxt Statrer for Element Plus'
